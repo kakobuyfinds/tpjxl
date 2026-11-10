@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#281f3a">
+<title>FishBuy spreadsheet | Van productlink tot pakket</title>
+<meta name="description" content="Gebruik de FishBuy spreadsheet als koopgids. Bekijk tien CAFANS-categorieën en vergelijk productlinks, maten, QC-foto’s en pakketkosten voor Nederland en België.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:locale:alternate" content="nl_BE">
+<meta property="og:title" content="FishBuy spreadsheet | Van productlink tot pakket">
+<meta property="og:description" content="Bekijk tien CAFANS-categorieën en controleer de variant, maat, QC-foto’s en pakketkosten voordat je bestelt.">
+<meta property="og:image" content="https://assets.christiandior.com/is/image/diorprod/3SN279ZRFH900_SBG_E06?%24r9x10_raw%24=&amp;bfc=on&amp;crop=0%2C0%2C4000%2C5000&amp;hei=800&amp;qlt=80&amp;scale=1&amp;wid=740">
+<meta property="og:image:alt" content="Zwarte Dior B30 Countdown-sneakers op een lichte achtergrond">
+<link rel="preconnect" href="https://assets.christiandior.com">
+<!-- Zoekonderzoek: tien domeinen bekeken via beschikbare zoekresultaten. De eerste tien Google-posities konden niet worden geverifieerd. -->
+<style>
+  :root{color-scheme:light;--paper:#fbf5f2;--ink:#281f3a;--muted:#5f5368;--line:#d9cbd8;--peach:#ffc6ae;--white:#fff}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+  a{color:inherit;text-underline-offset:.2em}
+  :focus-visible{outline:3px solid #a43459;outline-offset:4px}
+  .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+  .masthead,.footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.35rem 1rem;padding-block:.9rem}
+  .masthead a,.footer a{font-weight:800}
+  .masthead span,.footer p{color:var(--muted);font-size:.87rem}
+  .hero{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);background:var(--ink);color:var(--white);border-radius:.7rem;overflow:hidden}
+  .intro{align-self:center;padding:clamp(1.35rem,5vw,4rem)}
+  .eyebrow{margin:0 0 .5rem;font-size:.77rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+  .hero .eyebrow{color:var(--peach)}
+  h1,h2,h3{line-height:1.12;text-wrap:balance}
+  h1{margin:0;font-size:clamp(2.15rem,5.8vw,5rem);letter-spacing:-.065em;overflow-wrap:anywhere}
+  h2{margin:0 0 1rem;font-size:clamp(1.6rem,3.1vw,2.55rem);letter-spacing:-.045em}
+  h3{margin:0 0 .5rem;font-size:1.18rem}
+  p{margin:.55rem 0 .9rem}
+  .intro>p:not(.eyebrow){max-width:47ch;margin-block:1rem}
+  .cta{display:inline-flex;align-items:center;min-height:44px;padding:.55rem .9rem;border-radius:.28rem;background:var(--peach);color:var(--ink);font-weight:800;text-decoration:none}
+  .cta:hover{text-decoration:underline}
+  .hero a:focus-visible{outline-color:var(--white)}
+  figure{margin:0}
+  img{display:block;width:100%;height:auto}
+  .lead{display:grid;grid-template-rows:1fr auto;background:#f3eef2;color:var(--ink);min-width:0}
+  .lead img{height:100%;min-height:0;aspect-ratio:1.24;object-fit:contain}
+  figcaption{padding:.55rem .8rem;font-size:.85rem}
+  .section{margin-block:clamp(2rem,5vw,4rem)}
+  .categories{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;margin:0;padding:1px;background:var(--line);list-style:none}
+  .categories li{display:flex}
+  .categories a{display:flex;width:100%;flex-direction:column;gap:.25rem;padding:.85rem;background:var(--white);text-decoration:none;overflow-wrap:anywhere}
+  .categories a:hover{background:#fce4dc}
+  .categories a:focus-visible{position:relative;z-index:1;outline-offset:-3px}
+  .categories strong{font-size:.95rem;text-decoration:underline}
+  .categories small{color:var(--muted);font-size:.82rem;line-height:1.4}
+  .guides{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(1rem,4vw,3.5rem);align-items:start}
+  .steps{margin:0;padding-inline-start:1.5rem}
+  .steps li{padding:.6rem 0 .55rem .35rem;border-bottom:1px solid var(--line)}
+  .steps li::marker{font-weight:800}
+  .steps p{margin:.15rem 0}
+  .notebook{padding:clamp(1rem,3vw,2rem);border:1px solid var(--line);background:#f1e8f4}
+  dl{margin:.5rem 0 0}
+  .notebook dl div{padding:.55rem 0;border-top:1px solid var(--line)}
+  dt{font-weight:750}
+  dd{margin:0;color:var(--muted)}
+  .photos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}
+  .photos figure{border:1px solid var(--line);background:var(--white)}
+  .photos img{aspect-ratio:1.15;object-fit:contain;background:#f5f1f3}
+  .photos strong{display:block}
+  .costs{padding:clamp(1rem,4vw,2rem);background:#fbe2d8;border-inline-start:4px solid #9d3f61}
+  .costs p:last-child{margin-bottom:0}
+  .faq{max-width:54rem}
+  details{border-top:1px solid var(--line);padding:.6rem 0}
+  details:last-of-type,.footer{border-bottom:1px solid var(--line)}
+  summary{padding:.3rem .2rem;cursor:pointer;font-weight:750}
+  details p{margin:.25rem 0 .55rem;padding-inline-start:1rem}
+  .footer{border-top:1px solid var(--line)}
+  .footer p{margin:0}
+  @media(max-width:54rem){.categories{grid-template-columns:repeat(3,minmax(0,1fr))}.photos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:40rem){.hero,.guides{grid-template-columns:1fr}.lead img{height:auto;max-height:15rem}.categories{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<link rel="canonical" href="https://kakobuyfinds.github.io/tpjxl/">
+</head>
+<body>
+<header class="masthead wrap">
+  <a href="https://www.cafans.com">www.cafans.com</a>
+  <span>Winkelgids voor Nederland en België</span>
+</header>
+<main class="wrap">
+  <section class="hero" aria-labelledby="titel">
+    <div class="intro">
+      <p class="eyebrow">Van vondst naar pakket</p>
+      <h1 id="titel">FishBuy spreadsheet</h1>
+      <p>Begin bij een categorie en houd per vondst de bronlink, variant en maat bij. Met die gegevens kun je later controleren of de magazijnfoto’s bij je bestelling horen en wat het pakket uiteindelijk kost.</p>
+      <a class="cta" href="https://www.cafans.com">Naar de CAFANS-catalogus</a>
+    </div>
+    <figure class="lead">
+      <img src="https://assets.christiandior.com/is/image/diorprod/3SN279ZRFH900_SBG_E06?%24r9x10_raw%24=&amp;bfc=on&amp;crop=0%2C0%2C4000%2C5000&amp;hei=800&amp;qlt=80&amp;scale=1&amp;wid=740" width="740" height="800" alt="Zwarte Dior B30 Countdown-sneakers op een lichte achtergrond" fetchpriority="high" loading="eager">
+      <figcaption>Dior B30 Countdown · Kijk naar het zijprofiel, het mesh en de zoolvorm.</figcaption>
+    </figure>
+  </section>
+
+  <nav class="section" aria-labelledby="categorieen">
+    <h2 id="categorieen">Blader per categorie</h2>
+    <ul class="categories">
+      <li><a href="https://cafans.com/category-911-Shoes.html"><strong lang="en">Shoes</strong><small>Binnenzoollengte bij sneakers</small></a></li>
+      <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html"><strong lang="en">Hoodies/Sweaters</strong><small>Borstbreedte van een sweater</small></a></li>
+      <li><a href="https://cafans.com/category-913-T-Shirts.html"><strong lang="en">T-Shirts</strong><small>Schouderbreedte en ruglengte</small></a></li>
+      <li><a href="https://cafans.com/category-914-Jackets.html"><strong lang="en">Jackets</strong><small>Voering, rits en mouwlengte</small></a></li>
+      <li><a href="https://cafans.com/category-915-Pants%2FShorts.html"><strong lang="en">Pants/Shorts</strong><small>Taillewijdte en binnenbeenlengte</small></a></li>
+      <li><a href="https://cafans.com/category-916-Headwear.html"><strong lang="en">Headwear</strong><small>Petmaat en verstelbare sluiting</small></a></li>
+      <li><a href="https://cafans.com/category-917-Sets.html"><strong lang="en">Sets</strong><small>Bovenstuk en broek apart opmeten</small></a></li>
+      <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html"><strong lang="en">Underwear/underpants</strong><small>Tailleband en stofsamenstelling</small></a></li>
+      <li><a href="https://cafans.com/category-919-Jersey.html"><strong lang="en">Jersey</strong><small>Rugnummer en afwerking van de print</small></a></li>
+      <li><a href="https://cafans.com/category-920-Accessories.html"><strong lang="en">Accessories</strong><small>Armbandomtrek en type sluiting</small></a></li>
+    </ul>
+  </nav>
+
+  <section class="section guides" aria-labelledby="koopgids">
+    <article>
+      <p class="eyebrow">Van advertentie naar shortlist</p>
+      <h2 id="koopgids">FishBuy koopgids in drie stappen</h2>
+      <ol class="steps">
+        <li><strong>Controleer de verkoper en variant.</strong><p>Open de oorspronkelijke advertentie. Controleer of de verkoper, kleurcode, maatoptie en eventuele modelcode overeenkomen met je notitie. Sla de variant apart op als de link alleen de standaardkleur opent.</p></li>
+        <li><strong>Vergelijk met iets dat je al draagt.</strong><p>Meet een goed passend kledingstuk plat op en gebruik dezelfde meetpunten als de maattabel van de verkoper. Een plat gemeten borstbreedte kun je niet rechtstreeks vergelijken met een lichaamsomtrek.</p></li>
+        <li><strong>Vraag om de foto die het verschil laat zien.</strong><p>Twijfel je tussen twee maten? Vraag om een meetlint in beeld. Bij een onduidelijke kleur helpt een foto bij neutraal licht. Controleer vooraf wanneer je nog een omruiling kunt aanvragen.</p></li>
+      </ol>
+    </article>
+    <aside class="notebook" aria-labelledby="productlinks">
+      <p class="eyebrow">Invulhulp voor je eigen overzicht</p>
+      <h2 id="productlinks">FishBuy productlinks vastleggen</h2>
+      <dl>
+        <div><dt>Bron en verkoper</dt><dd>Originele productlink, winkelnaam en controledatum.</dd></div>
+        <div><dt>Exacte uitvoering</dt><dd>Modelcode, kleurnaam en geselecteerde maat zoals in de advertentie.</dd></div>
+        <div><dt>Doorslaggevende maat</dt><dd>Noteer het meetpunt en de waarde in centimeters, bijvoorbeeld de plat gemeten taillewijdte.</dd></div>
+        <div><dt>Prijsbasis</dt><dd>Artikelbedrag, valuta en eventuele binnenlandse verzending apart.</dd></div>
+        <div><dt>Open controlepunt</dt><dd>Noteer welke foto, meting of voorraadbevestiging je nog nodig hebt.</dd></div>
+      </dl>
+    </aside>
+  </section>
+
+  <section class="section" aria-labelledby="qc">
+    <p class="eyebrow">Vier details om op te letten</p>
+    <h2 id="qc">FishBuy QC-foto’s beoordelen</h2>
+    <p>QC staat voor kwaliteitscontrole. Gebruik de beelden hieronder als voorbeelden van wat je kunt vergelijken. Vraag voor je eigen bestelling om foto’s van het exemplaar in het magazijn.</p>
+    <div class="photos">
+      <figure>
+        <img src="https://cdn.adsport.cz/zbozi/nike/1520x900/nike-dunk-low-retro_DD1391-100_1.jpg" width="1520" height="900" alt="Nike Dunk Low Retro in zwart en wit met zwarte Swoosh" loading="lazy" decoding="async">
+        <figcaption><strong>Nike Dunk Low Retro</strong>Vraag bij twijfel om een foto van beide hielpanelen naast elkaar.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1764703823/854224_XJHNA_4794_001_100_0000_Light-cotton-jersey-sweatshirt-with-embroidery.jpg" width="490" height="490" alt="Donkerblauwe Gucci-sweater van katoenen jersey met borduursel" loading="lazy" decoding="async">
+        <figcaption><strong>Gucci-sweater</strong>Controleer de plaatsing van het borduursel en de breedte van de boorden.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://my.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-essential-cap--M77589_PM2_Front%20view.png?hei=420&amp;wid=420&amp;fmt=webp" width="420" height="420" alt="Donkerblauwe Louis Vuitton Monogram Essential-pet met gebogen klep" loading="lazy" decoding="async">
+        <figcaption><strong>Louis Vuitton Monogram Essential</strong>Vraag om een achteraanzicht van de verstelbare band.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://assets.hermes.com/is/image/hermesproduct/pulsera-glenan-h--077240F%2089-front-wm-2-0-0-1000-1000_g.jpg?wid=420&amp;hei=420" width="420" height="420" alt="Zwarte gevlochten Hermès Glénan H-armband met metalen sluiting" loading="lazy" decoding="async">
+        <figcaption><strong>Hermès Glénan H</strong>Vraag om de binnenomtrek en een close-up van de sluiting.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <article class="section costs" aria-labelledby="verzending">
+    <p class="eyebrow">Nederland en België</p>
+    <h2 id="verzending">FishBuy verzendkosten vergelijken</h2>
+    <p>Vraag twee verzendopties op voor dezelfde postcode en dezelfde verpakking. Noteer per optie het werkelijke gewicht, het volumegewicht en welk gewicht de vervoerder in rekening brengt. Een schoenendoos kan het pakket groter maken zonder veel extra gewicht toe te voegen.</p>
+    <p>Vergelijk het totaal in euro’s. Tel het artikel, de binnenlandse verzending, eventuele servicekosten en de internationale zending mee. Controleer vóór betaling of btw, eventuele invoerkosten en inklaringskosten al in het getoonde totaal zitten. Vergelijk de levertijd en track-and-trace per gekozen verzendmethode.</p>
+  </article>
+
+  <section class="section faq" aria-labelledby="faq">
+    <h2 id="faq">Veelgestelde vragen</h2>
+    <details open>
+      <summary>Wat is een FishBuy spreadsheet?</summary>
+      <p>Een FishBuy spreadsheet is een zoekterm voor een overzicht waarmee je productlinks en bestelgegevens kunt vergelijken. Deze gids helpt je categorieën te vinden en je eigen selectie bij te houden.</p>
+    </details>
+    <details>
+      <summary>Waar komen de categorielinks uit?</summary>
+      <p>De tien categorielinks openen de bijbehorende rubrieken op CAFANS. Controleer de actuele variant en voorraad op de productpagina voordat je beslist.</p>
+    </details>
+    <details>
+      <summary>Hoe vergelijk ik twee schoenmaten?</summary>
+      <p>Meet de binnenzool van een goed passende schoen in centimeters. Vergelijk die lengte met de maattabel of een meetfoto van de gekozen uitvoering.</p>
+    </details>
+    <details>
+      <summary>Bewijzen QC-foto’s dat een merkartikel echt is?</summary>
+      <p>Nee. QC-foto’s helpen je zichtbare details, afmetingen en staat te beoordelen. Voor herkomst en echtheid heb je controleerbare informatie over de verkoper en het artikel nodig.</p>
+    </details>
+    <details>
+      <summary>Kan ik vooraf het totaal voor Nederland of België bepalen?</summary>
+      <p>Maak een schatting met je postcode, verpakkingsmaten en de gekozen verzendoptie. Controleer welke belastingen en afhandelingskosten in de offerte zitten en welk gewicht voor het tarief wordt gebruikt.</p>
+    </details>
+  </section>
+</main>
+<footer class="footer wrap">
+  <a href="https://www.cafans.com">www.cafans.com</a>
+  <p>De merkfoto’s dienen als beeldvoorbeelden. Deze gids is onafhankelijk van FishBuy en de getoonde merken.</p>
+</footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "FishBuy spreadsheet | Van productlink tot pakket",
+  "inLanguage": "nl",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is een FishBuy spreadsheet?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Een FishBuy spreadsheet is een zoekterm voor een overzicht waarmee je productlinks en bestelgegevens kunt vergelijken. Deze gids helpt je categorieën te vinden en je eigen selectie bij te houden."}
+    },
+    {
+      "@type": "Question",
+      "name": "Waar komen de categorielinks uit?",
+      "acceptedAnswer": {"@type": "Answer", "text": "De tien categorielinks openen de bijbehorende rubrieken op CAFANS. Controleer de actuele variant en voorraad op de productpagina voordat je beslist."}
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe vergelijk ik twee schoenmaten?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Meet de binnenzool van een goed passende schoen in centimeters. Vergelijk die lengte met de maattabel of een meetfoto van de gekozen uitvoering."}
+    },
+    {
+      "@type": "Question",
+      "name": "Bewijzen QC-foto’s dat een merkartikel echt is?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Nee. QC-foto’s helpen je zichtbare details, afmetingen en staat te beoordelen. Voor herkomst en echtheid heb je controleerbare informatie over de verkoper en het artikel nodig."}
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik vooraf het totaal voor Nederland of België bepalen?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Maak een schatting met je postcode, verpakkingsmaten en de gekozen verzendoptie. Controleer welke belastingen en afhandelingskosten in de offerte zitten en welk gewicht voor het tarief wordt gebruikt."}
+    }
+  ]
+}
+</script>
+</body>
+</html>
